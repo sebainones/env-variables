@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Probando variables de entorno
         </p>
         <a
           className="App-link"
@@ -15,8 +15,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {process.env.REACT_APP_NAME}
         </a>
+        <p>Entorno de desarrollo: {process.env.NODE_ENV}</p>
+        <p>Variable node: {process.env.RANDOM_KEY}</p>
       </header>
     </div>
   );
