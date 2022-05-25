@@ -50,3 +50,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
+         env:          
+          REACT_APP_NAME: ${{ secrets.REACT_APP_NAME }}
+          REACT_APP_APISecret: ${{ secrets.REACT_APP_RANDOM_KEY }}
+          MyApp: SebaApp
