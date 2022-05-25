@@ -29,7 +29,8 @@ jobs:
         env:          
           REACT_APP_NAME: ${{ secrets.REACT_APP_NAME }}
           REACT_APP_APISecret: ${{ secrets.REACT_APP_RANDOM_KEY }}
-          REACT_APP_MyApp: SebaApp
+          REACT_APP_MyApp: "SebaApp"
+          
 
       - name: Any Name Bash Test Step
         shell: bash
