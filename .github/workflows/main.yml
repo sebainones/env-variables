@@ -16,6 +16,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    environment: REACT_APP_NAME
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -28,7 +29,7 @@ jobs:
           npm run-script build
         env:          
           REACT_APP_NAME: ${{ secrets.REACT_APP_NAME }}
-          REACT_APP_APISecret: ${{ secrets.REACT_APP_RANDOM_KEY }}
+          REACT_APP_APISecret: ${{ secrets.REACT_APP_RANDOM_KEY }}                               
           REACT_APP_MyApp: "SebaApp"
           
 

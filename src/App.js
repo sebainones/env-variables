@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const apiKey = process.env.REACT_APP_APIKey
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +23,7 @@ function App() {
         <p>Entorno de desarrollo node: {process.env.NODE_ENV}</p>        
         <p>Variable react secreta: {process.env.REACT_APP_RANDOM_KEY}</p>
         <p>Variable react NO secreta: {process.env.REACT_APP_MyApp}</p>
+        <p>Variable api key: {apiKey}</p>
       </header>
     </div>
   );
