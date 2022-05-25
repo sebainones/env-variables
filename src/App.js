@@ -18,7 +18,7 @@ function App() {
           {process.env.REACT_APP_NAME}
         </a>
         <p>Entorno de desarrollo: {process.env.NODE_ENV}</p>
-        <p>Variable node: {process.env.RANDOM_KEY}</p>
+        <p>Variable react: {process.env.REACT_APP_RANDOM_KEY}</p>
       </header>
     </div>
   );
