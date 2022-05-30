@@ -1,6 +1,5 @@
 {
-  "name": "env-variables",
-  "homepage": "https://tkadyear.github.io/env-variables/",
+  "name": "env-variables",  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
